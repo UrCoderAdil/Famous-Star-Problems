@@ -1,0 +1,28 @@
+//* * * * 
+// * * * *
+//* * * * 
+// * * * *
+//* * * * 
+// * * * *
+//* * * * 
+// * * * *
+#include <iostream>
+int main(){
+    int rows=8,columns=8,algorithm=1,i=0,j=0;
+    while( i < rows){
+        j=0;
+        while( j < columns - 4){
+            if (algorithm % 2 == 0 ){
+            std::cout<<" ";
+            std::cout<<"*";
+            }
+            else{
+            std::cout<<"*";
+            std::cout<<" ";
+            }
+            j++;
+        }
+        std::cout<<"\n";
+        algorithm++;
+        i++;}
+    }
