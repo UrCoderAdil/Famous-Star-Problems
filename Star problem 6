@@ -1,0 +1,30 @@
+//  *
+// ***
+//*****
+// ***
+//  *
+#include <iostream>
+int main(){
+    int rows,columns;
+    std::cout<<"\nEnter number of rows :";
+    std::cin>>rows;
+    for(int i=0;i<rows;i++){
+        for(int k=0;k<rows-i-1;k++){
+            std::cout<<" ";
+        }
+        for(int j=0; j< 2*i + 1; j++){
+            std::cout<<"*";
+        }
+        std::cout<<"\n";
+    }
+        for(int i=1;i<rows;i++){
+        for(int k=0;k<i;k++){
+            std::cout<<" ";
+        }
+        for(int j=0; j< (rows-i)*2-1; j++){
+            std::cout<<"*";
+        }
+        std::cout<<"\n";
+    }
+    
+}
